@@ -1,0 +1,5 @@
+# Entwurf zur Abstimmung mit dem Kunden - noch nicht fuer Suchmaschinen freigeben.
+# Sobald die Seite mit echten Inhalten live geht: diese Datei durch eine
+# freigebende Version ersetzen (User-agent: * / Allow: / + Sitemap).
+User-agent: *
+Disallow: /
