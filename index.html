@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!--
+  ============================================================================
+  MERVE COMFORT APARTS — Website
+  ----------------------------------------------------------------------------
+  ALLE PLATZHALTER SIND MIT "TODO" MARKIERT.
+  Im Projekt nach  TODO  suchen, um jede offene Stelle zu finden.
+  Vollstaendige Checkliste: README.md
+  ----------------------------------------------------------------------------
+  Zentrale Einstellungen (WhatsApp-Nummer, E-Mail, Formular-Endpunkt):
+  -> assets/js/main.js , ganz oben im Block CONFIG
+  ============================================================================
+-->
+
+<!-- TODO: Ortsnamen in Title und Description einsetzen (wichtig fuer lokales SEO) -->
+<title>Merve Comfort Aparts – Ferienwohnungen in TODO: Ort</title>
+<meta name="description" content="Merve Comfort Aparts: privat vermietete Ferienwohnungen in TODO: Ort. Verfügbarkeit direkt anfragen – persönliche Antwort, ohne Umweg über Buchungsportale.">
+<meta name="robots" content="index, follow">
+<!-- TODO: echte Domain eintragen -->
+<link rel="canonical" href="https://TODO-domain.de/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Merve Comfort Aparts">
+<meta property="og:title" content="Merve Comfort Aparts – Ferienwohnungen in TODO: Ort">
+<meta property="og:description" content="Privat vermietete Ferienwohnungen. Verfügbarkeit direkt anfragen – persönliche Antwort, ohne Umweg über Buchungsportale.">
+<meta property="og:url" content="https://TODO-domain.de/">
+<!-- TODO: eigenes Vorschaubild (1200x630) unter assets/img/og-image.jpg ablegen -->
+<meta property="og:image" content="https://TODO-domain.de/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F1EA">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232C4A3E'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23F5F1EA' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=Karla:wght@400..700&amp;display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" fetchpriority="high"
+      imagesrcset="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=900 900w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=1400 1400w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=2000 2000w"
+      imagesizes="100vw">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+<!-- ══════════════════════════ HEADER ══════════════════════════ -->
+<header class="header" id="header">
+  <div class="header__inner wrap wrap--wide">
+    <a class="brand" href="#hero" aria-label="Merve Comfort Aparts – Startseite">
+      <span class="brand__name">Merve</span>
+      <span class="brand__sub">Comfort Aparts</span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#apartments">Apartments</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#ausstattung">Ausstattung</a>
+      <a href="#lage">Lage</a>
+      <a href="#faq">FAQ</a>
+      <a href="#anfrage">Kontakt</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm header__cta" href="#anfrage">Verfügbarkeit anfragen</a>
+      <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="mobilemenu">
+        <span class="burger__lines" aria-hidden="true"></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile-Menü -->
+<div class="menu" id="mobilemenu" hidden>
+  <nav class="menu__nav" aria-label="Mobile Navigation">
+    <a href="#apartments"><span>01</span> Apartments</a>
+    <a href="#galerie"><span>02</span> Galerie</a>
+    <a href="#ausstattung"><span>03</span> Ausstattung</a>
+    <a href="#lage"><span>04</span> Lage</a>
+    <a href="#vertrauen"><span>05</span> Direkt anfragen</a>
+    <a href="#faq"><span>06</span> FAQ</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--primary btn--block" href="#anfrage">Verfügbarkeit anfragen</a>
+    <a class="btn btn--ghost btn--block" href="#" data-whatsapp>Per WhatsApp schreiben</a>
+  </div>
+</div>
+
+<main id="hauptinhalt">
+
+  <!-- ══════════════════════════ HERO ══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <!-- TODO: durch eigenes Foto ersetzen -> assets/img/hero.jpg (ca. 2000px breit, unter 300 KB) -->
+      <img
+        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=1400"
+        srcset="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=900 900w,
+                https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=1400 1400w,
+                https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=72&amp;w=2000 2000w"
+        sizes="100vw" width="2000" height="1333" fetchpriority="high" decoding="async"
+        alt="Heller Wohnbereich einer Ferienwohnung mit großer Fensterfront und Blick ins Grüne">
+    </div>
+
+    <div class="hero__inner wrap wrap--wide">
+      <p class="hero__eyebrow" data-anim style="--d:0ms">Ferienwohnungen · <span class="todo todo--dark">TODO: Ort</span></p>
+
+      <h1 class="hero__title" data-anim style="--d:90ms">
+        Ihre Ferienwohnung<br>in <span class="todo todo--dark todo--xl">TODO: Ort</span>
+      </h1>
+
+      <p class="hero__lead" data-anim style="--d:180ms">
+        <span class="todo todo--dark">TODO: Ein Satz über das Haus – Lage, Größe, Charakter.</span>
+        Fragen Sie Ihren Wunschzeitraum direkt bei uns an – ohne Umweg über ein Portal.
+      </p>
+
+      <div class="hero__cta" data-anim style="--d:270ms">
+        <a class="btn btn--primary" href="#anfrage">Verfügbarkeit anfragen</a>
+        <a class="btn btn--outline-light" href="#" data-whatsapp>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2A9.9 9.9 0 0 0 2.1 11.9c0 1.75.46 3.46 1.34 4.96L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01a9.9 9.9 0 0 0 9.9-9.9A9.9 9.9 0 0 0 12.04 2Zm5.8 14.06c-.25.69-1.45 1.33-2 1.38-.53.05-1.02.24-3.45-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.41.74-2.1 1-2.39.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.65.5.25.6.84 2.08.91 2.23.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.3.37-.42.5-.14.14-.29.3-.12.58.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.69-.18 1.36Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#schnellanfrage" aria-label="Weiter zur Schnellanfrage"><span></span></a>
+  </section>
+
+  <!-- ══════════ SCHNELLANFRAGE (überlappt den Hero) ══════════ -->
+  <div class="quickwrap wrap wrap--wide">
+    <form class="quick" id="schnellanfrage" aria-label="Schnellanfrage: Zeitraum und Gästezahl">
+      <div class="quick__field">
+        <label for="q-anreise">Anreise</label>
+        <input type="date" id="q-anreise" name="anreise" autocomplete="off">
+      </div>
+      <div class="quick__field">
+        <label for="q-abreise">Abreise</label>
+        <input type="date" id="q-abreise" name="abreise" autocomplete="off">
+      </div>
+      <div class="quick__field">
+        <label for="q-gaeste">Gäste</label>
+        <select id="q-gaeste" name="gaeste">
+          <option value="1">1 Gast</option>
+          <option value="2" selected>2 Gäste</option>
+          <option value="3">3 Gäste</option>
+          <option value="4">4 Gäste</option>
+          <option value="5">5 Gäste</option>
+          <option value="6">6 Gäste</option>
+          <option value="mehr">Mehr als 6</option>
+        </select>
+      </div>
+      <button class="btn btn--primary quick__btn" type="submit">Verfügbarkeit anfragen</button>
+    </form>
+  </div>
+
+  <!-- ══════════════════════════ ÜBER UNS ══════════════════════════ -->
+  <section class="section section--intro" id="ueber">
+    <div class="wrap intro">
+      <div class="intro__media" data-reveal>
+        <!-- TODO: durch ein echtes Foto des Hauses oder der Gastgeber ersetzen -->
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;q=70&amp;w=800"
+             srcset="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;q=70&amp;w=600 600w,
+                     https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w"
+             sizes="(min-width:900px) 38vw, 100vw" width="1000" height="1250" loading="lazy" decoding="async"
+             alt="Gemütliche Sitzecke einer Ferienwohnung mit Pflanzen und viel Tageslicht">
+      </div>
+
+      <div class="intro__body">
+        <p class="eyebrow" data-reveal>Über uns</p>
+        <h2 data-reveal style="--d:60ms">Direkt vermietet,<br>persönlich betreut.</h2>
+        <p class="lead" data-reveal style="--d:120ms">
+          <span class="todo">TODO: 3–4 Sätze über Merve Comfort Aparts – wer vermietet, seit wann, was Gästen wichtig ist, wie die Betreuung vor Ort aussieht.</span>
+        </p>
+        <p data-reveal style="--d:160ms">
+          Jede Anfrage über diese Seite kommt ohne Zwischenstelle bei uns an. Sie schreiben uns,
+          wir antworten persönlich – und klären offene Punkte, bevor Sie sich festlegen.
+        </p>
+
+        <dl class="facts" data-reveal style="--d:220ms">
+          <div class="facts__row"><dt>Apartments</dt><dd><span class="todo">TODO: Anzahl</span></dd></div>
+          <div class="facts__row"><dt>Gäste pro Wohnung</dt><dd><span class="todo">TODO: max. Belegung</span></dd></div>
+          <div class="facts__row"><dt>Check-in</dt><dd><span class="todo">TODO: Uhrzeit</span></dd></div>
+          <div class="facts__row"><dt>Mindestaufenthalt</dt><dd><span class="todo">TODO: Nächte</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ APARTMENTS ══════════════════════════ -->
+  <section class="section" id="apartments">
+    <div class="wrap">
+      <header class="shead">
+        <p class="eyebrow" data-reveal>Unsere Apartments</p>
+        <h2 data-reveal style="--d:60ms">Jede Wohnung im Überblick.</h2>
+        <p class="shead__lead" data-reveal style="--d:120ms">
+          Alle Wohnungen werden von uns selbst vermietet und betreut. Wählen Sie Ihren Favoriten –
+          oder lassen Sie uns in der Anfrage einfach die passende Wohnung vorschlagen.
+        </p>
+      </header>
+
+      <!--
+        TODO: Anzahl der Apartments anpassen.
+        Einen kompletten <article class="apt"> Block kopieren oder loeschen,
+        danach Nummer (01/02/03), Bild, Titel, Text und Angaben ersetzen.
+      -->
+      <div class="apts">
+
+        <article class="apt" id="apartment-1" data-reveal>
+          <div class="apt__media">
+            <!-- TODO: eigenes Foto -> assets/img/apartment-1.jpg -->
+            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&amp;fit=crop&amp;q=70&amp;w=1000"
+                 srcset="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w,
+                         https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&amp;fit=crop&amp;q=70&amp;w=1200 1200w"
+                 sizes="(min-width:900px) 52vw, 100vw" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Wohnzimmer von Apartment 1 mit heller Sitzgruppe und Tageslicht">
+          </div>
+          <div class="apt__body">
+            <p class="apt__index">01</p>
+            <h3>Apartment 1 <span class="todo">TODO: Name</span></h3>
+            <p><span class="todo">TODO: 2–3 Sätze zu dieser Wohnung – Lage im Haus, Ausblick, für wen sie sich eignet.</span></p>
+            <dl class="specs">
+              <div><dt>Wohnfläche</dt><dd><span class="todo">TODO: m²</span></dd></div>
+              <div><dt>Schlafzimmer</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Gäste</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Ausblick</dt><dd><span class="todo">TODO</span></dd></div>
+            </dl>
+            <a class="link-arrow" href="#anfrage" data-apartment="Apartment 1">Diese Wohnung anfragen</a>
+          </div>
+        </article>
+
+        <article class="apt" id="apartment-2" data-reveal>
+          <div class="apt__media">
+            <!-- TODO: eigenes Foto -> assets/img/apartment-2.jpg -->
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;q=70&amp;w=1000"
+                 srcset="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w,
+                         https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;q=70&amp;w=1200 1200w"
+                 sizes="(min-width:900px) 52vw, 100vw" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Geräumiger Wohnbereich von Apartment 2 mit bodentiefen Fenstern">
+          </div>
+          <div class="apt__body">
+            <p class="apt__index">02</p>
+            <h3>Apartment 2 <span class="todo">TODO: Name</span></h3>
+            <p><span class="todo">TODO: 2–3 Sätze zu dieser Wohnung – Lage im Haus, Ausblick, für wen sie sich eignet.</span></p>
+            <dl class="specs">
+              <div><dt>Wohnfläche</dt><dd><span class="todo">TODO: m²</span></dd></div>
+              <div><dt>Schlafzimmer</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Gäste</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Ausblick</dt><dd><span class="todo">TODO</span></dd></div>
+            </dl>
+            <a class="link-arrow" href="#anfrage" data-apartment="Apartment 2">Diese Wohnung anfragen</a>
+          </div>
+        </article>
+
+        <article class="apt" id="apartment-3" data-reveal>
+          <div class="apt__media">
+            <!-- TODO: eigenes Foto -> assets/img/apartment-3.jpg -->
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=70&amp;w=1000"
+                 srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w,
+                         https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=70&amp;w=1200 1200w"
+                 sizes="(min-width:900px) 52vw, 100vw" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Offener Wohn- und Essbereich von Apartment 3 mit Zugang zur Terrasse">
+          </div>
+          <div class="apt__body">
+            <p class="apt__index">03</p>
+            <h3>Apartment 3 <span class="todo">TODO: Name</span></h3>
+            <p><span class="todo">TODO: 2–3 Sätze zu dieser Wohnung – Lage im Haus, Ausblick, für wen sie sich eignet.</span></p>
+            <dl class="specs">
+              <div><dt>Wohnfläche</dt><dd><span class="todo">TODO: m²</span></dd></div>
+              <div><dt>Schlafzimmer</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Gäste</dt><dd><span class="todo">TODO</span></dd></div>
+              <div><dt>Ausblick</dt><dd><span class="todo">TODO</span></dd></div>
+            </dl>
+            <a class="link-arrow" href="#anfrage" data-apartment="Apartment 3">Diese Wohnung anfragen</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="section__cta" data-reveal>
+        Unsicher, welche Wohnung passt?
+        <a class="link-arrow" href="#anfrage">Zeitraum nennen, wir schlagen etwas vor</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ GALERIE ══════════════════════════ -->
+  <section class="section section--tint" id="galerie">
+    <div class="wrap">
+      <header class="shead shead--split">
+        <div>
+          <p class="eyebrow" data-reveal>Galerie</p>
+          <h2 data-reveal style="--d:60ms">Ein Blick in die Wohnungen.</h2>
+        </div>
+        <p class="shead__note" data-reveal style="--d:120ms">
+          <span class="todo">TODO: Alle Bilder durch echte Fotos ersetzen (assets/img/).</span>
+          Ein Bild anklicken, um es groß zu sehen.
+        </p>
+      </header>
+
+      <div class="gallery" id="gallery">
+        <figure class="g1"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&amp;fit=crop&amp;q=68&amp;w=1200" width="1200" height="800" loading="lazy" decoding="async" alt="Wohn- und Essbereich mit Küchenzeile und Esstisch am Fenster"></figure>
+        <figure class="g2"><img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&amp;fit=crop&amp;q=68&amp;w=800" width="800" height="1100" loading="lazy" decoding="async" alt="Weiße Küche mit Kochinsel und Barhockern"></figure>
+        <figure class="g3"><img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&amp;fit=crop&amp;q=68&amp;w=700" width="700" height="700" loading="lazy" decoding="async" alt="Helles Schlafzimmer mit Doppelbett und Fenster"></figure>
+        <figure class="g4"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&amp;fit=crop&amp;q=68&amp;w=700" width="700" height="700" loading="lazy" decoding="async" alt="Badezimmer mit freistehender Badewanne und Waschbecken"></figure>
+        <figure class="g5"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&amp;fit=crop&amp;q=68&amp;w=700" width="700" height="700" loading="lazy" decoding="async" alt="Sessel mit Stehlampe in einer ruhigen Leseecke"></figure>
+        <figure class="g6"><img src="https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&amp;fit=crop&amp;q=68&amp;w=900" width="900" height="675" loading="lazy" decoding="async" alt="Schlafzimmer mit dunkelgrüner Wand und gemachtem Doppelbett"></figure>
+        <figure class="g7"><img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&amp;fit=crop&amp;q=68&amp;w=900" width="900" height="675" loading="lazy" decoding="async" alt="Wohnzimmer mit Ledersofa, Pflanzen und offener Küche im Hintergrund"></figure>
+        <figure class="g8"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&amp;fit=crop&amp;q=68&amp;w=1400" width="1400" height="700" loading="lazy" decoding="async" alt="Außenansicht des Gebäudes mit Pool und Gartenbereich"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ AUSSTATTUNG ══════════════════════════ -->
+  <section class="section" id="ausstattung">
+    <div class="wrap amen">
+      <div class="amen__head">
+        <p class="eyebrow" data-reveal>Ausstattung</p>
+        <h2 data-reveal style="--d:60ms">Was in den Wohnungen vorhanden ist.</h2>
+        <p data-reveal style="--d:120ms">
+          Fehlt etwas, das Sie für Ihren Aufenthalt brauchen? Schreiben Sie es einfach
+          in die Anfrage – wir sagen Ihnen offen, was möglich ist.
+        </p>
+        <a class="btn btn--primary" href="#anfrage" data-reveal style="--d:180ms">Verfügbarkeit anfragen</a>
+      </div>
+
+      <div class="amen__body">
+        <p class="notice" data-reveal>
+          <strong>Platzhalter.</strong> Die folgenden Zeilen zeigen nur die Struktur und sind keine Angaben zur Wohnung.
+          <span class="todo">TODO: Durch die tatsächliche Ausstattung ersetzen, nicht zutreffende Zeilen löschen.</span>
+        </p>
+
+        <div class="amen__group" data-reveal style="--d:80ms">
+          <h3>In der Wohnung</h3>
+          <ul class="amen__list is-placeholder">
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+          </ul>
+        </div>
+
+        <div class="amen__group" data-reveal style="--d:120ms">
+          <h3>Küche</h3>
+          <ul class="amen__list is-placeholder">
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+          </ul>
+        </div>
+
+        <div class="amen__group" data-reveal style="--d:160ms">
+          <h3>Bad</h3>
+          <ul class="amen__list is-placeholder">
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+            <li>TODO: Ausstattungsmerkmal</li>
+          </ul>
+        </div>
+
+        <div class="amen__group" data-reveal style="--d:200ms">
+          <h3>Haus &amp; Außenbereich</h3>
+          <ul class="amen__list is-placeholder">
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+            <li>TODO: Ausstattungsmerkmal</li><li>TODO: Ausstattungsmerkmal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ LAGE ══════════════════════════ -->
+  <section class="section section--dark" id="lage">
+    <div class="wrap lage">
+      <div class="lage__text">
+        <p class="eyebrow" data-reveal>Lage &amp; Umgebung</p>
+        <h2 data-reveal style="--d:60ms">Wo Sie wohnen.</h2>
+        <p class="lead" data-reveal style="--d:120ms">
+          <span class="todo todo--dark">TODO: 3–4 Sätze zur Umgebung – Straße oder Viertel, was fußläufig erreichbar ist, wie ruhig es ist, Anbindung.</span>
+        </p>
+
+        <dl class="dist" data-reveal style="--d:180ms">
+          <div class="dist__row"><dt>Strand</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+          <div class="dist__row"><dt>Ortszentrum</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+          <div class="dist__row"><dt>Supermarkt</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+          <div class="dist__row"><dt>Restaurants</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+          <div class="dist__row"><dt>Bushaltestelle</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+          <div class="dist__row"><dt>Flughafen</dt><dd><span class="todo todo--dark">TODO</span></dd></div>
+        </dl>
+        <p class="dist__note"><span class="todo todo--dark">TODO: Nicht zutreffende Zeilen löschen, Entfernungen prüfen.</span></p>
+      </div>
+
+      <div class="lage__side">
+        <figure class="lage__figure" data-reveal style="--d:100ms">
+          <!-- TODO: durch ein echtes Foto der Umgebung ersetzen -->
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&amp;fit=crop&amp;q=70&amp;w=900"
+               width="900" height="1200" loading="lazy" decoding="async"
+               alt="Treppenweg zwischen Häusern mit Blick auf das Meer in der Umgebung der Ferienwohnungen">
+        </figure>
+
+        <!-- TODO: Google-Maps-Einbettung einfuegen (Maps -> Teilen -> Karte einbetten -> iframe hier einsetzen) -->
+        <div class="mapbox" data-reveal style="--d:160ms" role="img" aria-label="Platzhalter für die Karte">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+          <p><span class="todo todo--dark">TODO: Karte einbetten</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ VERTRAUEN ══════════════════════════ -->
+  <section class="section" id="vertrauen">
+    <div class="wrap">
+      <header class="shead shead--center">
+        <p class="eyebrow" data-reveal>Direkt anfragen</p>
+        <h2 data-reveal style="--d:60ms">Warum direkt bei uns?</h2>
+      </header>
+
+      <ol class="reasons">
+        <li data-reveal>
+          <span class="reasons__num">01</span>
+          <h3>Sie sprechen direkt mit uns</h3>
+          <p>Ihre Anfrage landet ohne Zwischenstelle bei den Gastgebern. Fragen zur Wohnung,
+             zur Anreise oder zum Aufenthalt beantworten wir selbst.</p>
+        </li>
+        <li data-reveal style="--d:80ms">
+          <span class="reasons__num">02</span>
+          <h3>Wünsche lassen sich besprechen</h3>
+          <p>Frühere Anreise, späterer Check-out, Zusatzbett: Was davon möglich ist,
+             klären wir vorab im direkten Gespräch statt im Portal-Formular.</p>
+        </li>
+        <li data-reveal style="--d:160ms">
+          <span class="reasons__num">03</span>
+          <h3>Antwort in <span class="todo">TODO: Zeitraum</span></h3>
+          <p>Wir melden uns persönlich zurück und sagen Ihnen ehrlich, ob Ihr Zeitraum
+             noch frei ist.</p>
+        </li>
+      </ol>
+
+      <!-- Gästestimmen: bewusst leer. Hier gehören ausschließlich echte, freigegebene Zitate hin. -->
+      <div class="voices" data-reveal>
+        <div class="voices__head">
+          <h3>Was Gäste sagen</h3>
+          <p class="notice">
+            <strong>Platzhalter.</strong> Hier gehören ausschließlich echte Gästestimmen hin.
+            <span class="todo">TODO: 2–3 echte Bewertungen einsetzen (mit Einverständnis, z.&nbsp;B. aus vorhandenen Portal-Bewertungen) – Name, Zeitraum, Zitat.</span>
+          </p>
+        </div>
+        <div class="voices__grid">
+          <blockquote class="voice is-placeholder">
+            <p>TODO: Zitat einer echten Gästebewertung</p>
+            <footer>TODO: Name · TODO: Monat/Jahr</footer>
+          </blockquote>
+          <blockquote class="voice is-placeholder">
+            <p>TODO: Zitat einer echten Gästebewertung</p>
+            <footer>TODO: Name · TODO: Monat/Jahr</footer>
+          </blockquote>
+          <blockquote class="voice is-placeholder">
+            <p>TODO: Zitat einer echten Gästebewertung</p>
+            <footer>TODO: Name · TODO: Monat/Jahr</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ FAQ ══════════════════════════ -->
+  <section class="section section--tint" id="faq">
+    <div class="wrap faq">
+      <div class="faq__head">
+        <p class="eyebrow" data-reveal>Häufige Fragen</p>
+        <h2 data-reveal style="--d:60ms">Gut zu wissen,<br>bevor Sie anfragen.</h2>
+        <p data-reveal style="--d:120ms">Ihre Frage ist nicht dabei?</p>
+        <a class="link-arrow" href="#" data-whatsapp data-reveal style="--d:160ms">Kurz per WhatsApp fragen</a>
+      </div>
+
+      <div class="faq__list" data-reveal style="--d:80ms">
+        <details name="faq">
+          <summary>Wie frage ich eine Wohnung an?</summary>
+          <div class="faq__a"><p>Über das Formular am Ende dieser Seite: Zeitraum, Gästezahl und Ihre Kontaktdaten
+            genügen. Alternativ erreichen Sie uns per WhatsApp, Telefon oder E-Mail.
+            Die Anfrage ist unverbindlich.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Wann sind Check-in und Check-out?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Check-in- und Check-out-Zeiten eintragen und beschreiben, wie die Schlüsselübergabe abläuft.</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Wie läuft die Bezahlung ab?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Zahlungsweg, Anzahlung und Zeitpunkt der Restzahlung beschreiben.</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Kann ich kostenfrei stornieren?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Stornobedingungen und Fristen eintragen.</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Gibt es Parkmöglichkeiten?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Parksituation beschreiben (eigener Stellplatz, Straße, Kosten).</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Sind Haustiere erlaubt?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Regelung für Haustiere eintragen.</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Sind Bettwäsche und Handtücher inklusive?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Angaben zu Bettwäsche, Handtüchern, Endreinigung und Wäschewechsel eintragen.</span></p></div>
+        </details>
+        <details name="faq">
+          <summary>Gibt es einen Mindestaufenthalt?</summary>
+          <div class="faq__a"><p><span class="todo">TODO: Mindestaufenthalt je Saison eintragen.</span></p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ ANFRAGE ══════════════════════════ -->
+  <section class="section section--accent" id="anfrage">
+    <div class="wrap kontakt">
+
+      <div class="kontakt__intro">
+        <p class="eyebrow" data-reveal>Anfrage</p>
+        <h2 data-reveal style="--d:60ms">Verfügbarkeit anfragen</h2>
+        <p class="lead" data-reveal style="--d:120ms">
+          Nennen Sie uns Ihren Zeitraum und die Gästezahl – wir melden uns persönlich
+          bei Ihnen zurück. Unverbindlich und kostenlos.
+        </p>
+
+        <ul class="kontakt__list" data-reveal style="--d:180ms">
+          <li>
+            <span class="kontakt__label">WhatsApp</span>
+            <a href="#" data-whatsapp>Nachricht schreiben</a>
+          </li>
+          <li>
+            <span class="kontakt__label">Telefon</span>
+            <!-- TODO: echte Telefonnummer eintragen, auch im href -->
+            <a href="tel:TODO"><span class="todo todo--dark">TODO: Telefonnummer</span></a>
+          </li>
+          <li>
+            <span class="kontakt__label">E-Mail</span>
+            <!-- TODO: echte E-Mail-Adresse eintragen, auch im href -->
+            <a href="mailto:TODO"><span class="todo todo--dark">TODO: E-Mail-Adresse</span></a>
+          </li>
+          <li>
+            <span class="kontakt__label">Adresse</span>
+            <address><span class="todo todo--dark">TODO: Straße, PLZ, Ort</span></address>
+          </li>
+        </ul>
+      </div>
+
+      <div class="formcard" data-reveal style="--d:100ms">
+        <form class="form" id="anfrageform" novalidate>
+          <div class="form__grid">
+            <div class="field">
+              <label for="f-anreise">Anreise <abbr title="Pflichtfeld">*</abbr></label>
+              <input type="date" id="f-anreise" name="anreise" required aria-describedby="e-anreise">
+              <p class="field__msg" id="e-anreise"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-abreise">Abreise <abbr title="Pflichtfeld">*</abbr></label>
+              <input type="date" id="f-abreise" name="abreise" required aria-describedby="e-abreise">
+              <p class="field__msg" id="e-abreise"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-gaeste">Anzahl Gäste <abbr title="Pflichtfeld">*</abbr></label>
+              <select id="f-gaeste" name="gaeste" required>
+                <option value="1">1 Gast</option>
+                <option value="2" selected>2 Gäste</option>
+                <option value="3">3 Gäste</option>
+                <option value="4">4 Gäste</option>
+                <option value="5">5 Gäste</option>
+                <option value="6">6 Gäste</option>
+                <option value="mehr">Mehr als 6</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-apartment">Wunsch-Apartment</label>
+              <!-- TODO: Apartments hier genauso benennen wie oben im Abschnitt "Apartments" -->
+              <select id="f-apartment" name="apartment">
+                <option value="Egal – bitte vorschlagen" selected>Egal – bitte vorschlagen</option>
+                <option value="Apartment 1">Apartment 1</option>
+                <option value="Apartment 2">Apartment 2</option>
+                <option value="Apartment 3">Apartment 3</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-name">Name <abbr title="Pflichtfeld">*</abbr></label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="e-name" placeholder="Vor- und Nachname">
+              <p class="field__msg" id="e-name"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-email">E-Mail</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" aria-describedby="e-kontakt" placeholder="name@beispiel.de">
+            </div>
+
+            <div class="field">
+              <label for="f-telefon">Telefon</label>
+              <input type="tel" id="f-telefon" name="telefon" autocomplete="tel" aria-describedby="e-kontakt" placeholder="+49 …">
+            </div>
+
+            <div class="field field--full field--tight">
+              <p class="field__msg" id="e-kontakt"></p>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-nachricht">Nachricht</label>
+              <textarea id="f-nachricht" name="nachricht" rows="4" placeholder="Wünsche, Fragen, ungefähre Ankunftszeit …"></textarea>
+            </div>
+
+            <div class="field field--full field--check">
+              <input type="checkbox" id="f-datenschutz" name="datenschutz" required aria-describedby="e-datenschutz">
+              <label for="f-datenschutz">
+                Ich habe die <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>
+                gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.
+                <abbr title="Pflichtfeld">*</abbr>
+              </label>
+              <p class="field__msg" id="e-datenschutz"></p>
+            </div>
+          </div>
+
+          <!-- Honeypot gegen Spam-Bots, fuer Menschen unsichtbar -->
+          <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+
+          <div class="form__foot">
+            <button class="btn btn--primary btn--lg" type="submit">Verfügbarkeit anfragen</button>
+            <p class="form__hint">Antwort in <span class="todo">TODO: Zeitraum</span>. Unverbindlich.</p>
+          </div>
+
+          <p class="form__alt">
+            Lieber direkt schreiben?
+            <a class="link-arrow" href="#" data-whatsapp>Per WhatsApp anfragen</a>
+          </p>
+        </form>
+
+        <div class="formdone" id="formdone" hidden role="status" aria-live="polite">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <h3>Danke für Ihre Anfrage.</h3>
+          <p id="formdone-text">Wir haben Ihre Anfrage erhalten und melden uns persönlich bei Ihnen zurück.</p>
+          <button class="link-arrow" type="button" id="formreset">Weitere Anfrage stellen</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="brand__name">Merve</span>
+      <span class="brand__sub">Comfort Aparts</span>
+      <p><span class="todo todo--dark">TODO: Straße, PLZ, Ort</span></p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer-Navigation">
+      <p class="footer__navtitle">Seite</p>
+      <a href="#apartments">Apartments</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#ausstattung">Ausstattung</a>
+      <a href="#lage">Lage</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <nav class="footer__nav" aria-label="Kontakt">
+      <p class="footer__navtitle">Kontakt</p>
+      <a href="#anfrage">Verfügbarkeit anfragen</a>
+      <a href="#" data-whatsapp>WhatsApp</a>
+      <!-- TODO: echte Nummer / Adresse eintragen -->
+      <a href="tel:TODO"><span class="todo todo--dark">TODO: Telefon</span></a>
+      <a href="mailto:TODO"><span class="todo todo--dark">TODO: E-Mail</span></a>
+    </nav>
+
+    <nav class="footer__nav" aria-label="Rechtliches">
+      <p class="footer__navtitle">Rechtliches</p>
+      <!-- TODO: Impressum und Datenschutzerklaerung anlegen (in DE Pflicht) und hier verlinken -->
+      <a href="#" data-legal="impressum">Impressum <span class="todo todo--dark">TODO</span></a>
+      <a href="#" data-legal="datenschutz">Datenschutz <span class="todo todo--dark">TODO</span></a>
+      <a href="#" data-legal="agb">AGB <span class="todo todo--dark">TODO</span></a>
+    </nav>
+  </div>
+
+  <div class="wrap footer__bar">
+    <p>&copy; <span id="year">2026</span> Merve Comfort Aparts</p>
+    <p class="footer__credit"><span class="todo todo--dark">TODO: Platzhalterfotos durch eigene Fotos ersetzen</span></p>
+  </div>
+</footer>
+
+<!-- ══════════ MOBILE STICKY CTA ══════════ -->
+<div class="stickycta" id="stickycta" hidden>
+  <a class="btn btn--primary stickycta__main" href="#anfrage">Verfügbarkeit anfragen</a>
+  <a class="stickycta__wa" href="#" data-whatsapp aria-label="Per WhatsApp schreiben">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2A9.9 9.9 0 0 0 2.1 11.9c0 1.75.46 3.46 1.34 4.96L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01a9.9 9.9 0 0 0 9.9-9.9A9.9 9.9 0 0 0 12.04 2Zm5.8 14.06c-.25.69-1.45 1.33-2 1.38-.53.05-1.02.24-3.45-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.41.74-2.1 1-2.39.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.65.5.25.6.84 2.08.91 2.23.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.3.37-.42.5-.14.14-.29.3-.12.58.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.28.14.45.12.62-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.69-.18 1.36Z"/></svg>
+  </a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" type="button" id="lbclose" aria-label="Schließen">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" id="lbprev" aria-label="Vorheriges Bild">&#8249;</button>
+  <figure class="lightbox__stage"><img id="lbimg" alt=""></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" id="lbnext" aria-label="Nächstes Bild">&#8250;</button>
+  <p class="lightbox__count" id="lbcount"></p>
+</div>
+
+<!--
+  ══════════════════════════════════════════════════════════════════════════
+  STRUKTURIERTE DATEN (schema.org) - hilft Google, das Angebot zu verstehen.
+
+  TODO: Alle Werte unten mit echten Daten fuellen und danach diesen Block
+        aus dem Kommentar herausnehmen, damit er aktiv wird.
+        NICHT mit Platzhaltern online stellen - falsche Angaben schaden.
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Merve Comfort Aparts",
+    "url": "https://TODO-domain.de/",
+    "image": "https://TODO-domain.de/assets/img/hero.jpg",
+    "telephone": "TODO",
+    "email": "TODO",
+    "priceRange": "TODO",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "TODO",
+      "postalCode": "TODO",
+      "addressLocality": "TODO",
+      "addressCountry": "TODO"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": "TODO", "longitude": "TODO" },
+    "numberOfRooms": "TODO",
+    "checkinTime": "TODO",
+    "checkoutTime": "TODO"
+  }
+  <\/script>
+  ══════════════════════════════════════════════════════════════════════════
+-->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+Hier gehoeren die echten Fotos hin.
+
+Empfohlene Dateinamen:
+  hero.jpg              (ca. 2000 px breit)
+  apartment-1.jpg
+  apartment-2.jpg
+  apartment-3.jpg
+  galerie-1.jpg ... galerie-8.jpg
+  lage.jpg
+  og-image.jpg          (1200 x 630 px, Vorschaubild fuer WhatsApp/Facebook)
+
+Siehe README.md, Abschnitt "Fotos austauschen".
